@@ -1,0 +1,32 @@
+.done_all{
+    display: flex;
+    margin: 20px 0 50px 0;
+}
+.done_item1 {
+    width: 655px;
+    height: 370px;
+    background: gray;
+}
+
+.done_item2 {
+    width: 655px;
+    height: 370px;
+    background: gray;
+    margin-top: 30px;
+
+}
+
+.done_item3 {
+    width: 655px;
+    height: 370px;
+    background: gray;
+    margin-left: 30px;
+}
+
+.done_item4 {
+    width: 655px;
+    height: 370px;
+    background: gray;
+    margin-top: 30px;
+    margin-left: 30px;
+}

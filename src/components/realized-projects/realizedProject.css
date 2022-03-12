@@ -1,0 +1,10 @@
+.real_blocks {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0 50px;
+}
+.real_block {
+    height: 655px;
+    width: 655px;
+    background: gray;
+}
