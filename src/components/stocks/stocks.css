@@ -1,0 +1,12 @@
+.cards {
+    display: flex;
+    justify-content: space-between;
+    width: 1340px;
+}
+.card {
+    width: 427px;
+    height: 420px;
+    background: gray;
+    margin-top: 50px;
+    cursor: pointer;
+}

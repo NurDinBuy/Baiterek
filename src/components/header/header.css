@@ -3,4 +3,20 @@
     height: 80px;
     margin: 0 auto;
     background: grey;
+    display: flex;
+    align-items: center;
+    padding: 50px;
+}
+.logo {
+    font-size: 50px;
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+    font-family: Algerian;
+}
+.links {
+    width: 1000px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 30px;
 }
