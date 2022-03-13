@@ -6,6 +6,7 @@ const Header = () => {
   const logo = {
     textDecoration: "none",
     color: "black",
+
   };
   return (
     <div className="header">
