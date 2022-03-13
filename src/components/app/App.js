@@ -11,12 +11,8 @@ function App() {
       <div className="App">
         <Header />
         <div className="container">
-          <Route path="/stocks" component={Stocks}>
-
-          </Route>
-          <Route exact={true} path="/" component={HomePage}>
-
-          </Route>
+          <Route path="/stocks" component={Stocks}></Route>
+          <Route exact={true} path="/" component={HomePage}></Route>
         </div>
         <Footer />
       </div>
