@@ -1,30 +1,25 @@
 import React from "react";
 import "./header.css";
-import { Link } from "react-router-dom";
+import {Link} from "react-router-dom";
+import {hover} from "@testing-library/user-event/dist/hover";
 
 const Header = () => {
-  const logo = {
-    textDecoration: "none",
-    color: "black",
 
-  };
-  return (
-    <div className="header">
-      <div className="logo">
-        <Link to="/" style={logo}>
-          Baiterek
-        </Link>
-      </div>
-      <div className="links">
-        <Link style={logo}>Проекты</Link>
-        <Link to="/stocks" style={logo}>
-          Акции
-        </Link>
-        <Link style={logo}>Способы покупки</Link>
-        <Link style={logo}>Новости</Link>
-      </div>
-    </div>
-  );
+    return (
+        <div className="header">
+
+            <div className="logo">
+                <Link  className="link" to="/" >Baiterek</Link>
+            </div>
+
+            <div className="links">
+                <Link  className="link" >Проекты</Link>
+                <Link className="link" to="/stocks">Акции</Link>
+                <Link className="link" >Способы покупки</Link>
+                <Link className="link" >Новости</Link>
+            </div>
+        </div>
+    );
 };
 
 export default Header;
