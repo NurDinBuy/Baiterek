@@ -1,47 +1,38 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import bank1 from './images/банк2.jpg'
 import bank2 from './images/банк2.jpg'
 import bank3 from './images/банк2.jpg'
 import bank4 from './images/банк2.jpg'
 import './slider.css'
+import right from '../slider/images/right.png'
+import left from '../slider/images/left.png'
 
 const Slider = () => {
-    const img = [
-        <img className='img' key={bank1} src={bank1} />,
-        <img className='img' key={bank2} src={bank2} />,
-        <img className='img' key={bank3} src={bank3} />,
-        <img className='img' key={bank4} src={bank4} />,
-    ]
-    const [activeIndex, setActiveIndex] = useState(0);
-
-    useEffect(() => {
-        const interval = setInterval(() => {
-            setActiveIndex((current) => {
-                const res = current === img.length - 1 ? 0 : current + 1
-                return res
-            })
-        }, 7000)
-        return () => clearInterval()
-    }, [])
-
-    const prevImgIndex = activeIndex ? activeIndex - 1 : img.length - 1
-    const nextImgIndex = activeIndex === img.length - 1 ? 0 : activeIndex + 1
-
     return (
-        <div className="slider">
-            <div className="slider-img slider-img-prev"
-                 key={prevImgIndex}>
-                {img[prevImgIndex]}
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="4000">
+                <img src={bank1} class="d-block w-100" alt="..."/>
             </div>
-            <div className="slider-img"
-                 key={activeIndex}>
-                {img[activeIndex]}
+            <div class="carousel-item" data-bs-interval="4000">
+                <img src={bank2} class="d-block w-100" alt="..."/>
             </div>
-            <div className="slider-img slider-img-next"
-                 key={nextImgIndex}>
-                {img[nextImgIndex]}
+            <div class="carousel-item" data-bs-interval="4000">
+                <img src={bank3} class="d-block w-100" alt="..."/>
+            </div>
+            <div class="carousel-item" data-bs-interval="4000">
+                <img src={bank4} class="d-block w-100" alt="..."/>
             </div>
         </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+            <span><img className="leftArrow" src={left} /></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+            <span><img className="rightArrow" src={right} /></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
     )
 };
 
