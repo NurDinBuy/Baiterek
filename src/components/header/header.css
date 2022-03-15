@@ -2,31 +2,44 @@
     width: 1440px;
     height: 80px;
     margin: 0 auto;
-    background: grey;
     display: flex;
     align-items: center;
     padding: 50px;
+    background: #FFFFFF;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
 }
 
 .logo {
-    font-size: 50px;
-    font-weight: 600;
-    text-decoration: none;
-    color: black;
-    font-family: Algerian;
+    width: 88px;
+    height: 70px;
 }
+
 .links {
     width: 1000px;
     display: flex;
+    margin: 0 auto;
     justify-content: space-around;
     font-size: 30px;
 }
 
 .link {
-     text-decoration: none;
-     color: black;
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #666666;
 }
+
 .link:hover {
-    color: aliceblue;
-    transition: 0.4s;
+    border-bottom: 1px solid black;
+    transition: 0.2s;
+}
+
+.phone {
+    width: 109px;
+    height: 42px;
+    font-size: 36px;
+    color: #446CDB;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
 }
