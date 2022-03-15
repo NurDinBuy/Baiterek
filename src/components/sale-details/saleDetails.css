@@ -1,6 +1,5 @@
 .sale_all {
     display: flex;
-    /*flex-direction: column;*/
     justify-content: space-between;
     align-items: center;
     margin: 20px 0 50px 0;
@@ -14,52 +13,110 @@
     background: #FFFFFF;
     box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.25);
     border-radius: 15px;
+    padding: 20px;
+}
+.sale-cards{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left-card {
+    width: 334px;
+    height: 330px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 15px;
+}
+.right-card {
+    width: 259px;
+    height: 201px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-style: normal;
+}
+.right-card h3{
+    font-family: 'Roboto Slab';
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 47px;
+}
+
+.right-card p {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    margin: 50px 0 ;
+}
+.right-card span {
+    position: static;
+    width: 102px;
+    height: 26px;
+    background: #446CDB;
+    border-radius: 5px;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 4px 20px;
+}
+.modal-card {
+    position: absolute;
+    width: 470px;
+    height: 370px;
+    background: rgba(0, 0, 0, 0.5);
+    /*filter: blur(1px);*/
+    backdrop-filter: blur(4px);
+    border-radius: 15px;
+    margin-left: 180px;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px 25px 30px 20px;
+    font-family: 'Roboto';
+    letter-spacing: 0.08em;
+    display: none;
+}
+.modal-card.show {
+    display: block;
 }
 
 
 
+.modal-card h3 {
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 47px;
+}
+.modal-card p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 22px;
+    margin: 30px 0 22px;
+}
+.modal-card button {
+    background: #446CDB;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25), inset 4px 4px 8px rgba(255, 255, 255, 0.25);
+    border-radius: 5px;
+    border: none;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    cursor: pointer;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*.sale_item1 {*/
-/*    width: 655px;*/
-/*    height: 370px;*/
-/*    background: gray;*/
-/*}*/
-
-/*.sale_item2 {*/
-/*    width: 655px;*/
-/*    height: 370px;*/
-/*    background: gray;*/
-/*    margin-top: 30px;*/
-
-/*}*/
-
-/*.sale_item3 {*/
-/*    width: 655px;*/
-/*    height: 370px;*/
-/*    background: gray;*/
-/*    margin-left: 30px;*/
-/*}*/
-
-/*.sale_item4 {*/
-/*    width: 655px;*/
-/*    height: 370px;*/
-/*    background: gray;*/
-/*    margin-top: 30px;*/
-/*    margin-left: 30px;*/
-/*}*/

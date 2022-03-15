@@ -26,6 +26,19 @@ function App() {
             </div>
         </Router>
     );
+  return (
+    <Router>
+      <div className="App">
+        <Header />
+        <div className="container">
+          <Route exact={true} path="/" component={HomePage}></Route>
+          <Route path="/stocks" component={Stocks}></Route>
+          <Route path="/details" component={stocksDetails}></Route>
+        </div>
+        <Footer />
+      </div>
+    </Router>
+  );
 }
 
 export default App;
