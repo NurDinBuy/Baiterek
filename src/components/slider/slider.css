@@ -1,3 +1,25 @@
-#carouselExampleInterval {
+.slider {
+    height: 700px;
+    width: 1340px;
+    border-radius: 20px;
     margin-top: 30px;
 }
+/*.img {*/
+/*    width: 100%;*/
+/*}*/
+
+/*.slider-img {*/
+/*    position: absolute;*/
+/*    width: 100%;*/
+/*    height: 700px;*/
+/*    transition: all 0.8s;*/
+/*    background-size: cover;*/
+/*}*/
+
+/*.slider-img-prev {*/
+/*    transform: translateX(-100%);*/
+/*}*/
+
+/*.slider-img-next {*/
+/*    transform: translateX(100%);*/
+/*}*/
