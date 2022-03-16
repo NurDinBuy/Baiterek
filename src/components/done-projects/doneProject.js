@@ -1,8 +1,10 @@
 import React from 'react';
 import './doneProjects.css'
+import SaleDetails from "../sale-details";
 
 const DoneProject = () => {
     return (
+        // <SaleDetails />
         <div className='done'>
             <h1>Законченные проекты</h1>
             <div className="done_all">

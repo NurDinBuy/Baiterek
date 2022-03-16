@@ -30,7 +30,7 @@
 }
 
 .link:hover {
-    border-bottom: 1px solid black;
+    color: #446CDB;
     transition: 0.2s;
 }
 
@@ -42,4 +42,11 @@
     display: flex;
     justify-content: space-between;
     font-weight: 700;
+}
+
+.phone img {
+    width: 29px;
+    height: 29px;
+    margin-left: 10px;
+    margin-top: 12px;
 }

@@ -1,8 +1,9 @@
 import React from "react";
 import "./header.css";
 import {Link} from "react-router-dom";
+
 import logo from '../images/logoBaiterek.svg'
-import phoneSVG from '../images/Vector.svg'
+import phoneSVG from '../images/phone.svg';
 import str from '../images/strlk.svg'
 
 const Header = () => {

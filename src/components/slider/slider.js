@@ -23,16 +23,6 @@ const Slider = () => {
                     </div>
                     <div class="carousel-item" >
                         <img src={bank4} class="d-block w-100" alt="..."/>
-                        <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
-                                data-bs-slide="prev">
-                            <span><img className="leftArrow" src={left}/></span>
-                            <span className="visually-hidden">Previous</span>
-                        </button>
-                        <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
-                                data-bs-slide="next">
-                            <span><img className="rightArrow" src={right}/></span>
-                            <span className="visually-hidden">Next</span>
-                        </button>
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
