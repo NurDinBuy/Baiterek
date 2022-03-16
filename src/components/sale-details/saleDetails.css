@@ -89,6 +89,7 @@
 }
 .modal-card.show {
     display: block;
+    transition: 0.5s;
 }
 
 
